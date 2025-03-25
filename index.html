@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +11,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <!-- custom css -->
     <link rel="stylesheet" href="src/input.css">
-    <title>Nagad Apps</title>
+    <title>Nagad Start</title>
 </head>
-<body>
+
+<body class="flex justify-center items-center min-h-screen">
+    <section class="flex flex-col items-center justify-between max-w-[440px] w-full h-[100vh] bg-[#FF844B] 
+    bg-[url('/src/images/start_bg.png')] bg-no-repeat bg-right bg-contain">
+        <!-- img section -->
+        <div>
+            <img src="src/images/nagad_white_logo.png" class="size-min relative top-34" alt="white logo">
+        </div>
+        <!-- text, loading section -->
+         <div class="mb-5 flex flex-col items-center">
+            <!-- loading  -->
+            <div class="mb-5">
+                <span class="text-white loading loading-ring loading-sm fill"></span>
+                <span class="text-white loading loading-ring loading-xs"></span>
+                <span class="text-white loading loading-ring loading-xs"></span>
+            </div>
+            <!-- version -->
+            <div class="">
+                <span class="text-white font-medium">1.1.22.03</span>
+            </div>
+         </div>
+    </section>
+
+
+
+
+
 
     <script src="src/js/script.js"></script>
 </body>
+
 </html>

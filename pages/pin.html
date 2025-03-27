@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Daisy Ui CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- fontawsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="/src/input.css">
+    <title>Login</title>
+</head>
+<body class="regular-font flex justify-center items-center text-zinc-400">
+    <!-- wrapper Section -->
+    <section class="max-w-[440px] w-full h-[100vh] border border-black py-7 relative">
+        <header class="flex justify-end me-4">
+            <!-- switch button -->
+             <div class="border border-red-600 rounded-full overflow-hidden inline-flex">
+                <button id="" type="button" class="w-1/2  text-zinc-300 px-4 py-2 text-sm">বাং</button>
+                <!-- add active:bg-red-600 when using js -->
+                <button id="" type="button" class="w-1/2 text-base text-white px-4 py-2 bg-red-600">En</button>
+             </div>
+        </header>
+
+        <main class="mt-8 flex flex-col items-center">
+            <!-- logo section -->
+             <section class="flex flex-col items-center">
+                <img src="/src/images/dark_logo.png" alt="">
+                <p class="font-medium text-base">Mobile Number</p>
+                <h2 class="text-xl font-semibold text-black text-center mt-2">01855-338847</h2>
+             </section>
+
+            <!-- input box -->
+             <section class="mt-16 w-8/10">
+                <form action="" method="" class="flex flex-col gap-8">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-phone text-red-600"></i>
+                        <label for="pin" class="flex-1 ">
+                            <input type="password" class="text-black w-full py-2 flex-1 outline-none border-b border-t-0 border-l-0 border-r-0 border-red-600 placeholder-zinc-500" placeholder="PIN" name="" id="pin" required>
+                            <span class="text-xs">Enter 4-digit PIN</span>
+                        </label>
+                    </div>
+                    
+                    <input type="submit" class="self-center w-6/10 py-2 text-center rounded-4xl border border-red-600 text-zinc-400" value="Login">
+                </form>
+
+                <!-- text section -->
+                 <div class="mt-6">
+                    <a href="#" class="block text-center text-xs font-medium text-zinc-400">Forget Pin</a>
+
+                 </div>
+             </section>
+        </main>
+
+        <footer class="absolute bottom-0 left-0 w-full">
+            <!-- items -->
+            <div class="grid grid-cols-3">
+                <div class="flex flex-col items-center gap-1">
+                    <img src="/src/images/locator 1.png" class="object-contain" alt="store location">
+                    <span class="text-xs font-medium">Store Locator</span>
+                </div>
+                <div class="flex flex-col items-center gap-1">
+                    <img src="/src/images/discount 1.png" class="object-contain" alt="store location">
+                    <span class="text-xs font-medium">Offers</span>
+                </div>
+                <div class="flex flex-col items-center gap-1">
+                    <img src="/src/images/Vector.png" class="object-contain" alt="store location">
+                    <span class="text-xs font-medium">Help</span>
+                </div>
+            </div>
+        </footer>
+    </section>
+    
+    <script src="src/js/script.js"></script>
+</body>
+
+</html>

@@ -6,3 +6,21 @@
 .regular-font {
     font-family: "Inter", sans-serif;
 }
+.border-design{
+    position: relative;
+    width: 100%;
+}
+.border-design::after, .border-design::before{
+    position: absolute;
+    content: "";
+    width: 43%;
+    background-color: red;
+    height: 1px;
+}
+.border-design::after{
+    right: 0;
+}
+.border-design::before{
+    left: 0;
+}
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Daisy Ui CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- fontawsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="/src/input.css">
+    <title>Registration</title>
+</head>
+<body class="regular-font flex justify-center items-center text-zinc-400">
+    <!-- wrapper Section -->
+    <section class="border border-black max-w-[440px] w-full h-[100vh]">
+        <header class="bg-red-600 grid grid-cols-3 justify-between items-center px-3 pt-11 pb-4">
+            <div class="">
+                <i class="fa-solid fa-arrow-left text-white text-xl"></i>
+            </div>
+            <button type="button" class="self-center font-semibold text-lg text-white ">Registration</button>
+        </header>
+        <main class="text-center mt-8 flex flex-col items-center">
+            <!-- img section -->
+             <div>
+                <img src="/src/images/Group 9.png" alt="nagad logo" srcset="">
+             </div>
+              <!-- input box -->
+              <section class="mt-15 w-full px-3">
+                <h3 class="font-medium text-2xl text-zinc-800">Mobile Operator</h3>
+                <p class="text-gray-400 font-medium text-xs mt-2">Select your current mobile network operator</p>
+                <form action="" method="" class="flex flex-col gap-9">
+                    <div class="flex flex-col gap-2  justify-center items-center">
+                        <label for="operator" class="">
+                            <input type="radio" name="radio" id="operator">&nbsp;Teletalk
+                        </label>
+                        <label for="operator" class="">
+                            <input type="radio" name="radio" id="operator">&nbsp;Grameenphone
+                        </label>
+                        <label for="operator">
+                            <input type="radio" name="radio" id="operator">&nbsp;Airtel
+                        </label>
+                        <label for="operator" class="">
+                            <input type="radio" name="radio" id="operator">&nbsp;Robi
+                        </label>
+                        <label for="operator">
+                            <input type="radio" name="radio" id="operator">&nbsp;Banglalink
+                        </label>
+                    </div>
+                    
+                
+                    <input type="submit" class="self-center w-8/10 py-2 text-center rounded-4xl border border-red-600 text-zinc-400" value="Next">
+                </form>
+             </section>
+        </main>
+    </section>
+    <script src="/src/js/script.js"></script>
+</body>
+
+</html>
